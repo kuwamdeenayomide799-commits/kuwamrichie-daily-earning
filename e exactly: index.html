@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KuwamRichie Daily Earning</title>
+
+<style>
+
+*{box-sizing:border-box}
+
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7f5;color:#17251d}
+
+header{background:#063d2b;color:white;padding:22px;text-align:center}
+
+header h2{margin:0}
+
+.hero{background:linear-gradient(135deg,#063d2b,#128451);color:white;text-align:center;padding:65px 20px}
+
+.hero h1{font-size:34px}
+
+.hero p{line-height:1.7}
+
+button{background:#e9bd45;color:#152319;border:0;padding:15px 25px;border-radius:7px;font-weight:bold;font-size:16px;cursor:pointer}
+
+section{padding:30px 20px;text-align:center}
+
+.card{background:white;padding:25px;margin:15px auto;border-radius:12px;max-width:450px;box-shadow:0 3px 12px #0001}
+
+input{width:100%;padding:14px;margin:9px 0;border:1px solid #ccc;border-radius:6px;font-size:16px}
+
+.green{background:#087847;color:white;width:100%}
+
+footer{background:#063d2b;color:white;text-align:center;padding:22px}
+
+#message{color:#087847;font-weight:bold}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>KuwamRichie</h2>
+
+<p>Daily Earning Platform</p>
+
+</header>
+
+<div class="hero">
+
+<h1>Welcome to KuwamRichie</h1>
+
+<p>Discover affiliate marketing opportunities.
+
+Share products and earn commissions from
+
+qualifying sales.</p>
+
+<button onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">
+
+GET STARTED
+
+</button>
+
+</div>
+
+<section>
+
+<h2>Why Join KuwamRichie?</h2>
+
+<div class="card">
+
+<h3>Affiliate Marketing</h3>
+
+<p>Promote products and earn commissions on qualifying sales.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Member Dashboard</h3>
+
+<p>Access your member area after your account setup is complete.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Easy Registration</h3>
+
+<p>Start by submitting your registration details.</p>
+
+</div>
+
+</section>
+
+<section id="register">
+
+<div class="card">
+
+<h2>Create Your Account</h2>
+
+<p>Enter your details to begin registration.</p>
+
+<form id="signup">
+
+<input type="text" id="name" placeholder="Full name" required>
+
+<input type="email" id="email" placeholder="Email address" required>
+
+<input type="tel" id="phone" placeholder="Phone number" required>
+
+<button class="green" type="submit">CONTINUE</button>
+
+</form>
+
+<p id="message"></p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 KuwamRichie Daily Earning</p>
+
+<p>Affiliate commissions are not guaranteed.</p>
+
+</footer>
+
+<script>
+
+document.getElementById("signup").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("message").textContent =
+
+"Your details are ready. Account registration will be activated after secure registration is connected.";
+
+});
+
+</script>
+
+</body>
+
+</html>
